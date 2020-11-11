@@ -1,0 +1,6 @@
+framework module Pods_doudo_doudoUITests {
+  umbrella header "Pods-doudo-doudoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

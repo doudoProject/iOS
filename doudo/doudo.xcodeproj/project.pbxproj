@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62332D4445A31DB23AC0788B /* Pods_doudo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F7ED4228732336D9849562 /* Pods_doudo.framework */; };
+		73B5FC878EDC0C9303146540 /* Pods_doudo_doudoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AD075C4E96EA226EEEB0FA /* Pods_doudo_doudoUITests.framework */; };
 		9653428C25519AB300B430BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653428B25519AB300B430BD /* AppDelegate.swift */; };
 		9653428E25519AB300B430BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653428D25519AB300B430BD /* SceneDelegate.swift */; };
 		9653429025519AB300B430BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653428F25519AB300B430BD /* ViewController.swift */; };
@@ -17,6 +19,15 @@
 		965342AE25519AB500B430BD /* doudoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965342AD25519AB500B430BD /* doudoUITests.swift */; };
 		965342C225519E7700B430BD /* UIPrimaryRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965342C125519E7700B430BD /* UIPrimaryRoundButton.swift */; };
 		965342CA2551A0A200B430BD /* UISecondaryRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965342C92551A0A200B430BD /* UISecondaryRoundButton.swift */; };
+		967001CA2552FB7200F600B7 /* AnniversaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967001C92552FB7200F600B7 /* AnniversaryViewController.swift */; };
+		967001CF2552FDC100F600B7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967001CE2552FDC100F600B7 /* TabBarViewController.swift */; };
+		967001D42552FE1700F600B7 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967001D32552FE1700F600B7 /* TodoViewController.swift */; };
+		967001D92552FE2500F600B7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967001D82552FE2500F600B7 /* CalendarViewController.swift */; };
+		967001DE2552FE2E00F600B7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967001DD2552FE2E00F600B7 /* SettingViewController.swift */; };
+		968111E325530BCE00686E87 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968111E225530BCE00686E87 /* EntryViewController.swift */; };
+		96C9D144255BD1C000797F2C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9D143255BD1C000797F2C /* SignUpViewController.swift */; };
+		96C9D149255BD3DD00797F2C /* DoneButtonOnKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9D148255BD3DD00797F2C /* DoneButtonOnKeyboard.swift */; };
+		F4BDD7B4FC4986379D0B8A03 /* Pods_doudoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09C765567166024A03B6C53 /* Pods_doudoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F19159325954B51574BADB1 /* Pods-doudo-doudoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doudo-doudoUITests.release.xcconfig"; path = "Target Support Files/Pods-doudo-doudoUITests/Pods-doudo-doudoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		13D6E155757C268DC4954C69 /* Pods-doudo-doudoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doudo-doudoUITests.debug.xcconfig"; path = "Target Support Files/Pods-doudo-doudoUITests/Pods-doudo-doudoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		30AD075C4E96EA226EEEB0FA /* Pods_doudo_doudoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doudo_doudoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66379CAFC2E59BB0098E9FE7 /* Pods-doudo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doudo.release.xcconfig"; path = "Target Support Files/Pods-doudo/Pods-doudo.release.xcconfig"; sourceTree = "<group>"; };
+		92E58B6C6DEAA09C363C7290 /* Pods-doudo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doudo.debug.xcconfig"; path = "Target Support Files/Pods-doudo/Pods-doudo.debug.xcconfig"; sourceTree = "<group>"; };
 		9653428825519AB300B430BD /* doudo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doudo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653428B25519AB300B430BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9653428D25519AB300B430BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +69,18 @@
 		965342AF25519AB500B430BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965342C125519E7700B430BD /* UIPrimaryRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPrimaryRoundButton.swift; sourceTree = "<group>"; };
 		965342C92551A0A200B430BD /* UISecondaryRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISecondaryRoundButton.swift; sourceTree = "<group>"; };
+		967001C92552FB7200F600B7 /* AnniversaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryViewController.swift; sourceTree = "<group>"; };
+		967001CE2552FDC100F600B7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		967001D32552FE1700F600B7 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		967001D82552FE2500F600B7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		967001DD2552FE2E00F600B7 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		968111E225530BCE00686E87 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		96C9D143255BD1C000797F2C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		96C9D148255BD3DD00797F2C /* DoneButtonOnKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButtonOnKeyboard.swift; sourceTree = "<group>"; };
+		9AAC2759E7A47A7D0C0E3560 /* Pods-doudoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doudoTests.debug.xcconfig"; path = "Target Support Files/Pods-doudoTests/Pods-doudoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1F7ED4228732336D9849562 /* Pods_doudo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doudo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBBC3441BE497E310FB8FE8 /* Pods-doudoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doudoTests.release.xcconfig"; path = "Target Support Files/Pods-doudoTests/Pods-doudoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E09C765567166024A03B6C53 /* Pods_doudoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doudoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62332D4445A31DB23AC0788B /* Pods_doudo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4BDD7B4FC4986379D0B8A03 /* Pods_doudoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B5FC878EDC0C9303146540 /* Pods_doudo_doudoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3663139F0CBA9655EF95D50E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1F7ED4228732336D9849562 /* Pods_doudo.framework */,
+				30AD075C4E96EA226EEEB0FA /* Pods_doudo_doudoUITests.framework */,
+				E09C765567166024A03B6C53 /* Pods_doudoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FF5D8332AA7F7CF173B7596 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92E58B6C6DEAA09C363C7290 /* Pods-doudo.debug.xcconfig */,
+				66379CAFC2E59BB0098E9FE7 /* Pods-doudo.release.xcconfig */,
+				13D6E155757C268DC4954C69 /* Pods-doudo-doudoUITests.debug.xcconfig */,
+				0F19159325954B51574BADB1 /* Pods-doudo-doudoUITests.release.xcconfig */,
+				9AAC2759E7A47A7D0C0E3560 /* Pods-doudoTests.debug.xcconfig */,
+				BCBBC3441BE497E310FB8FE8 /* Pods-doudoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9653427F25519AB300B430BD = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +141,8 @@
 				965342A125519AB500B430BD /* doudoTests */,
 				965342AC25519AB500B430BD /* doudoUITests */,
 				9653428925519AB300B430BD /* Products */,
+				4FF5D8332AA7F7CF173B7596 /* Pods */,
+				3663139F0CBA9655EF95D50E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,12 +162,20 @@
 				9653428B25519AB300B430BD /* AppDelegate.swift */,
 				9653428D25519AB300B430BD /* SceneDelegate.swift */,
 				9653428F25519AB300B430BD /* ViewController.swift */,
+				967001C92552FB7200F600B7 /* AnniversaryViewController.swift */,
 				9653429125519AB300B430BD /* Main.storyboard */,
+				96C9D143255BD1C000797F2C /* SignUpViewController.swift */,
+				967001D32552FE1700F600B7 /* TodoViewController.swift */,
+				968111E225530BCE00686E87 /* EntryViewController.swift */,
+				967001D82552FE2500F600B7 /* CalendarViewController.swift */,
+				967001DD2552FE2E00F600B7 /* SettingViewController.swift */,
+				967001CE2552FDC100F600B7 /* TabBarViewController.swift */,
 				965342C125519E7700B430BD /* UIPrimaryRoundButton.swift */,
 				965342C92551A0A200B430BD /* UISecondaryRoundButton.swift */,
 				9653429425519AB500B430BD /* Assets.xcassets */,
 				9653429625519AB500B430BD /* LaunchScreen.storyboard */,
 				9653429925519AB500B430BD /* Info.plist */,
+				96C9D148255BD3DD00797F2C /* DoneButtonOnKeyboard.swift */,
 			);
 			path = doudo;
 			sourceTree = "<group>";
@@ -141,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 965342B225519AB500B430BD /* Build configuration list for PBXNativeTarget "doudo" */;
 			buildPhases = (
+				520FD425BA496BE4FF90A0B2 /* [CP] Check Pods Manifest.lock */,
 				9653428425519AB300B430BD /* Sources */,
 				9653428525519AB300B430BD /* Frameworks */,
 				9653428625519AB300B430BD /* Resources */,
+				7BFC0878BA49641E8CC21136 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 965342B525519AB500B430BD /* Build configuration list for PBXNativeTarget "doudoTests" */;
 			buildPhases = (
+				1BCCA365F2DD0147C1398FC2 /* [CP] Check Pods Manifest.lock */,
 				9653429A25519AB500B430BD /* Sources */,
 				9653429B25519AB500B430BD /* Frameworks */,
 				9653429C25519AB500B430BD /* Resources */,
@@ -176,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 965342B825519AB500B430BD /* Build configuration list for PBXNativeTarget "doudoUITests" */;
 			buildPhases = (
+				36FA4A1C959143998BD5C6E0 /* [CP] Check Pods Manifest.lock */,
 				965342A525519AB500B430BD /* Sources */,
 				965342A625519AB500B430BD /* Frameworks */,
 				965342A725519AB500B430BD /* Resources */,
+				B62F29EDBA80C12447619FFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,14 +328,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BCCA365F2DD0147C1398FC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doudoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36FA4A1C959143998BD5C6E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doudo-doudoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		520FD425BA496BE4FF90A0B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doudo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BFC0878BA49641E8CC21136 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-doudo/Pods-doudo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-doudo/Pods-doudo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-doudo/Pods-doudo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62F29EDBA80C12447619FFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-doudo-doudoUITests/Pods-doudo-doudoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-doudo-doudoUITests/Pods-doudo-doudoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-doudo-doudoUITests/Pods-doudo-doudoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9653428425519AB300B430BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967001D42552FE1700F600B7 /* TodoViewController.swift in Sources */,
 				9653429025519AB300B430BD /* ViewController.swift in Sources */,
 				9653428C25519AB300B430BD /* AppDelegate.swift in Sources */,
 				965342CA2551A0A200B430BD /* UISecondaryRoundButton.swift in Sources */,
+				967001CA2552FB7200F600B7 /* AnniversaryViewController.swift in Sources */,
+				967001DE2552FE2E00F600B7 /* SettingViewController.swift in Sources */,
+				96C9D144255BD1C000797F2C /* SignUpViewController.swift in Sources */,
+				96C9D149255BD3DD00797F2C /* DoneButtonOnKeyboard.swift in Sources */,
+				968111E325530BCE00686E87 /* EntryViewController.swift in Sources */,
+				967001CF2552FDC100F600B7 /* TabBarViewController.swift in Sources */,
+				967001D92552FE2500F600B7 /* CalendarViewController.swift in Sources */,
 				9653428E25519AB300B430BD /* SceneDelegate.swift in Sources */,
 				965342C225519E7700B430BD /* UIPrimaryRoundButton.swift in Sources */,
 			);
@@ -441,6 +621,7 @@
 		};
 		965342B325519AB500B430BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92E58B6C6DEAA09C363C7290 /* Pods-doudo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +641,7 @@
 		};
 		965342B425519AB500B430BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66379CAFC2E59BB0098E9FE7 /* Pods-doudo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +661,7 @@
 		};
 		965342B625519AB500B430BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AAC2759E7A47A7D0C0E3560 /* Pods-doudoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -501,6 +684,7 @@
 		};
 		965342B725519AB500B430BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCBBC3441BE497E310FB8FE8 /* Pods-doudoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +707,7 @@
 		};
 		965342B925519AB500B430BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D6E155757C268DC4954C69 /* Pods-doudo-doudoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +728,7 @@
 		};
 		965342BA25519AB500B430BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F19159325954B51574BADB1 /* Pods-doudo-doudoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
