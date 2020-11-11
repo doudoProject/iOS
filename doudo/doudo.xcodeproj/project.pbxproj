@@ -159,23 +159,15 @@
 		9653428A25519AB300B430BD /* doudo */ = {
 			isa = PBXGroup;
 			children = (
+				96C9D163255BE54300797F2C /* ViewController */,
 				9653428B25519AB300B430BD /* AppDelegate.swift */,
 				9653428D25519AB300B430BD /* SceneDelegate.swift */,
-				9653428F25519AB300B430BD /* ViewController.swift */,
-				967001C92552FB7200F600B7 /* AnniversaryViewController.swift */,
-				9653429125519AB300B430BD /* Main.storyboard */,
-				96C9D143255BD1C000797F2C /* SignUpViewController.swift */,
-				967001D32552FE1700F600B7 /* TodoViewController.swift */,
 				968111E225530BCE00686E87 /* EntryViewController.swift */,
-				967001D82552FE2500F600B7 /* CalendarViewController.swift */,
-				967001DD2552FE2E00F600B7 /* SettingViewController.swift */,
+				9653429125519AB300B430BD /* Main.storyboard */,
+				96C9D162255BE52100797F2C /* templates */,
 				967001CE2552FDC100F600B7 /* TabBarViewController.swift */,
-				965342C125519E7700B430BD /* UIPrimaryRoundButton.swift */,
-				965342C92551A0A200B430BD /* UISecondaryRoundButton.swift */,
 				9653429425519AB500B430BD /* Assets.xcassets */,
-				9653429625519AB500B430BD /* LaunchScreen.storyboard */,
 				9653429925519AB500B430BD /* Info.plist */,
-				96C9D148255BD3DD00797F2C /* DoneButtonOnKeyboard.swift */,
 			);
 			path = doudo;
 			sourceTree = "<group>";
@@ -196,6 +188,71 @@
 				965342AF25519AB500B430BD /* Info.plist */,
 			);
 			path = doudoUITests;
+			sourceTree = "<group>";
+		};
+		96C9D162255BE52100797F2C /* templates */ = {
+			isa = PBXGroup;
+			children = (
+				965342C125519E7700B430BD /* UIPrimaryRoundButton.swift */,
+				9653429625519AB500B430BD /* LaunchScreen.storyboard */,
+				96C9D148255BD3DD00797F2C /* DoneButtonOnKeyboard.swift */,
+				965342C92551A0A200B430BD /* UISecondaryRoundButton.swift */,
+			);
+			path = templates;
+			sourceTree = "<group>";
+		};
+		96C9D163255BE54300797F2C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96C9D166255BE59400797F2C /* Anniversary */,
+				96C9D164255BE55D00797F2C /* Auth */,
+				96C9D167255BE5B000797F2C /* Todo */,
+				96C9D169255BE5CB00797F2C /* Calendar */,
+				96C9D168255BE5BD00797F2C /* Setting */,
+			);
+			name = ViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		96C9D164255BE55D00797F2C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9653428F25519AB300B430BD /* ViewController.swift */,
+				96C9D143255BD1C000797F2C /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		96C9D166255BE59400797F2C /* Anniversary */ = {
+			isa = PBXGroup;
+			children = (
+				967001C92552FB7200F600B7 /* AnniversaryViewController.swift */,
+			);
+			path = Anniversary;
+			sourceTree = "<group>";
+		};
+		96C9D167255BE5B000797F2C /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				967001D32552FE1700F600B7 /* TodoViewController.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		96C9D168255BE5BD00797F2C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				967001DD2552FE2E00F600B7 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		96C9D169255BE5CB00797F2C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				967001D82552FE2500F600B7 /* CalendarViewController.swift */,
+			);
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

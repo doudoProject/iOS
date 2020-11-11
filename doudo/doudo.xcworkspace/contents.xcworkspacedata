@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Calendar">
+   </Group>
+   <Group
+      location = "container:"
+      name = "ViewController">
+   </Group>
    <FileRef
       location = "group:doudo.xcodeproj">
    </FileRef>
