@@ -6,24 +6,81 @@
 //
 
 import UIKit
-
+import FSCalendar
 class CalendarViewController: UIViewController {
-
+    
+    @IBOutlet var calendar: FSCalendar!
+    var event: [Date] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        calendar.delegate = self
+        calendar.dataSource = self
+        setCalendar()
+        navigationController?.navigationBar.topItem?.title="캘린더"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE MM-dd-YYYY"
+        let string = formatter.string(from: date)
+        print("\(string)")
     }
-    */
+    
+    func setCalendar(){
+        calendar.locale = Locale(identifier: "ko_KR")
+        calendarEventUpdate()
+        calenderColorChange()
+        calendarHeaderChange()
+//        calendarAllowMultipleSelection()
+        calenderScrollVertical()
+    }
+    
+    func calendarEventUpdate(){
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.dateFormat = "yyyy-MM-dd"
+        
+        let xmas = formatter.date(from: "2020-12-25")
+        let birthday = formatter.date(from: "2020-12-31")
+        
+        event = [xmas!, birthday!]
+    }
+    
+    func calenderColorChange(){
+        calendar.appearance.headerTitleColor = UIColor.black
+        calendar.appearance.selectionColor = UIColor(red: 224/255, green: 224/255, blue: 224/255, alpha: 1)
+        calendar.appearance.weekdayTextColor = UIColor(red: 255/255, green: 82/255, blue: 82/255, alpha: 1)
+        calendar.appearance.todayColor = UIColor(red: 255/255, green: 82/255, blue: 82/255, alpha: 1)
+        calendar.appearance.todaySelectionColor = UIColor.red
+    }
+    
+    func calendarHeaderChange(){
+        calendar.headerHeight = 50
+        calendar.appearance.headerMinimumDissolvedAlpha = 0.0
+        calendar.appearance.headerDateFormat = "YYYY년 M월"
+        calendar.appearance.headerTitleColor = .black
+        calendar.appearance.headerTitleFont = UIFont.systemFont(ofSize: 24)
+    }
+    
+    func calenderScrollVertical(){
+        calendar.scrollEnabled = true
+        calendar.scrollDirection = .vertical
+    }
+    
+    @IBAction func addButtonPressed(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "addDate") as! AddDateViewController
+        vc.title = "일정 추가"
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
 
+extension CalendarViewController: FSCalendarDelegate, FSCalendarDataSource{
+    func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
+        if self.event.contains(date){
+            return 1
+        } else {
+            return 0
+        }
+    }
 }

@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-doudo-doudoUITests/Pods-doudo-doudoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
 ${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
 ${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
 ${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework

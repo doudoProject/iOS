@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setLoading(){
-        let loading = NVActivityIndicatorView(frame: .zero, type: .ballBeat, color: UIColor(red: 255/255, green: 82/255, blue: 82/255, alpha: 1), padding: 0)
+        let loading = NVActivityIndicatorView(frame: .zero, type: .ballPulseSync, color: UIColor(red: 255/255, green: 82/255, blue: 82/255, alpha: 1), padding: 0)
         
         loading.translatesAutoresizingMaskIntoConstraints = false
 

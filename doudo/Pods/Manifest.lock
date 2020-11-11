@@ -1,4 +1,5 @@
 PODS:
+  - FSCalendar (2.8.1)
   - NVActivityIndicatorView (5.0.1):
     - NVActivityIndicatorView/Base (= 5.0.1)
   - NVActivityIndicatorView/Base (5.0.1)
@@ -10,23 +11,26 @@ PODS:
   - RxSwift (5.1.1)
 
 DEPENDENCIES:
+  - FSCalendar
   - NVActivityIndicatorView
   - RxCocoa
   - RxSwift
 
 SPEC REPOS:
   trunk:
+    - FSCalendar
     - NVActivityIndicatorView
     - RxCocoa
     - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 9ab1cd1881b1834eb2b391d7b040a1cff6a3347e
+PODFILE CHECKSUM: 5465c1b897cca6476dcb473e3b23fad93a12836b
 
 COCOAPODS: 1.10.0

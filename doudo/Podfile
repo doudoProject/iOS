@@ -9,6 +9,7 @@ target 'doudo' do
 	pod 'NVActivityIndicatorView'
 	pod "RxSwift"
 	pod "RxCocoa"
+	pod "FSCalendar"
 
   target 'doudoTests' do
     inherit! :search_paths

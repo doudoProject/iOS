@@ -38,6 +38,56 @@ class SignUpViewController: UIViewController {
         self.view.frame.origin.y = 0
     }
     
+    @IBAction func signinButtonPressed(_ sender: Any) {
+        comparePassword()
+    }
+    
+    func comparePassword(){
+        if(String(passwordTextField.text!) == String(passwordCheckTextField.text!)){
+            // postSignIn()
+        } else {
+            alertPasswordNotCorrect()
+        }
+    }
+//
+//    func postSignIn(){
+//        let parameters = ["userid": idTextField.text, "email": emailTextField.text, "password": passwordTextField.text, "name": nameTextField.text]
+//        guard let url = URL(string:"https://doudo.run/goorm.io/v1/auth/signup") else { return }
+//        var request = URLRequest(url:url)
+//        request.httpMethod="POST"
+//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+//
+//        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
+//        request.httpBody = httpBody
+//
+//        let session = URLSession.shared
+//        session.dataTask(with: request){
+//            (data, response, error ) in
+//            if let data = data {
+//                do{
+//                    let myResponse = response as! HTTPURLResponse
+//                    print("status code \(myResponse.statusCode)")
+//                    if myResponse.statusCode == 200{
+//                        let log = try JSONDecoder().decode()
+//                    }
+//                }
+//            }
+//        }
+//    }
+    
+    func alertPasswordNotCorrect(){
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "경고", message: "비밀번호가 일치하지 않습니다.", preferredStyle: .alert)
+                                  
+            alert.addAction(UIAlertAction(title: "확인", style: .default){
+                (action) in
+                self.passwordTextField.text = ""
+                self.passwordCheckTextField.text = ""
+            })
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func cancelButtonPressed(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }

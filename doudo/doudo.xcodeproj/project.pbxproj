@@ -27,6 +27,8 @@
 		968111E325530BCE00686E87 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968111E225530BCE00686E87 /* EntryViewController.swift */; };
 		96C9D144255BD1C000797F2C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9D143255BD1C000797F2C /* SignUpViewController.swift */; };
 		96C9D149255BD3DD00797F2C /* DoneButtonOnKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9D148255BD3DD00797F2C /* DoneButtonOnKeyboard.swift */; };
+		96C9D179255C112B00797F2C /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9D178255C112B00797F2C /* SettingTableViewController.swift */; };
+		96C9D17E255C14D000797F2C /* AddDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9D17D255C14D000797F2C /* AddDateViewController.swift */; };
 		F4BDD7B4FC4986379D0B8A03 /* Pods_doudoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09C765567166024A03B6C53 /* Pods_doudoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		968111E225530BCE00686E87 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		96C9D143255BD1C000797F2C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		96C9D148255BD3DD00797F2C /* DoneButtonOnKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButtonOnKeyboard.swift; sourceTree = "<group>"; };
+		96C9D178255C112B00797F2C /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		96C9D17D255C14D000797F2C /* AddDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDateViewController.swift; sourceTree = "<group>"; };
 		9AAC2759E7A47A7D0C0E3560 /* Pods-doudoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doudoTests.debug.xcconfig"; path = "Target Support Files/Pods-doudoTests/Pods-doudoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1F7ED4228732336D9849562 /* Pods_doudo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doudo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBBC3441BE497E310FB8FE8 /* Pods-doudoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doudoTests.release.xcconfig"; path = "Target Support Files/Pods-doudoTests/Pods-doudoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				967001DD2552FE2E00F600B7 /* SettingViewController.swift */,
+				96C9D178255C112B00797F2C /* SettingTableViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				967001D82552FE2500F600B7 /* CalendarViewController.swift */,
+				96C9D17D255C14D000797F2C /* AddDateViewController.swift */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -493,6 +499,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C9D179255C112B00797F2C /* SettingTableViewController.swift in Sources */,
+				96C9D17E255C14D000797F2C /* AddDateViewController.swift in Sources */,
 				967001D42552FE1700F600B7 /* TodoViewController.swift in Sources */,
 				9653429025519AB300B430BD /* ViewController.swift in Sources */,
 				9653428C25519AB300B430BD /* AppDelegate.swift in Sources */,
