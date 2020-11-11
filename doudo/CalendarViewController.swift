@@ -14,17 +14,10 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.topItem?.title="캘린더"
         calendar.delegate = self
         calendar.dataSource = self
         setCalendar()
-        navigationController?.navigationBar.topItem?.title="캘린더"
-    }
-    
-    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE MM-dd-YYYY"
-        let string = formatter.string(from: date)
-        print("\(string)")
     }
     
     func setCalendar(){
@@ -32,7 +25,6 @@ class CalendarViewController: UIViewController {
         calendarEventUpdate()
         calenderColorChange()
         calendarHeaderChange()
-//        calendarAllowMultipleSelection()
         calenderScrollVertical()
     }
     
@@ -68,10 +60,11 @@ class CalendarViewController: UIViewController {
         calendar.scrollDirection = .vertical
     }
     
-    @IBAction func addButtonPressed(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "addDate") as! AddDateViewController
-        vc.title = "일정 추가"
-        navigationController?.pushViewController(vc, animated: true)
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE MM-dd-YYYY"
+        let string = formatter.string(from: date)
+        print("\(string)")
     }
 }
 
